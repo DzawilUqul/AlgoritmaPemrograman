@@ -1,1 +1,1 @@
-void takeDmg();
+float

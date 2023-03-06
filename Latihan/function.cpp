@@ -5,7 +5,7 @@
 using namespace std;
 
 int jumlah(int a, int b);
-int pengurangan(int a, int b);
+int kurang(int a, int b);
 int kali(int a, int b);
 float bagi(float a, float b);
 
@@ -83,7 +83,7 @@ int main()
     // cout<<"akar dari "<<x<<" : "<<sqrt(x)<<"\n";
     // cout<<"kuadrat dari "<<y<<" : "<<pow(y,y)<<"\n";
 
-    //function
+    // Latihan Function
     int a,b,c,d,f;
 
     float e;
@@ -93,9 +93,9 @@ int main()
     cin>>b;
 
     c = jumlah(a,b);
-    d = pengurangan(a,b);
-    e = bagi(a,b);
+    d = kurang(a,b);
     f = kali(a,b);
+    e = bagi(a,b);
     cout<<"jumlah : "<<c;
     cout<<"\nkurang : "<<d;
     cout<<"\nkali : "<<f;
@@ -112,12 +112,12 @@ int jumlah(int x, int y)
     return x+y;
 }
 
-int pengurangan(int x, int y)
+int kurang(int x, int y)
 {
     return x-y;
 }
 
-float kali(float x, float y)
+int kali(int x, int y)
 {
     return x*y;
 }
