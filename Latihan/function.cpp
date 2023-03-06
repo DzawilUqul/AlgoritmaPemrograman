@@ -6,6 +6,7 @@ using namespace std;
 
 int jumlah(int a, int b);
 int pengurangan(int a, int b);
+int kali(int a, int b);
 float bagi(float a, float b);
 
 int main()
@@ -83,22 +84,21 @@ int main()
     // cout<<"kuadrat dari "<<y<<" : "<<pow(y,y)<<"\n";
 
     //function
-    int a,b,c,d;
+    int a,b,c,d,f;
 
-    float e,f,g;
+    float e;
 
     cout<<"masukkan int angka : \n";
     cin>>a;
     cin>>b;
-    cout<<"masukkan float bagi : \n";
-    cin>>f;
-    cin>>g;
 
     c = jumlah(a,b);
     d = pengurangan(a,b);
-    e = bagi(f,g);
+    e = bagi(a,b);
+    f = kali(a,b);
     cout<<"jumlah : "<<c;
     cout<<"\nkurang : "<<d;
+    cout<<"\nkali : "<<f;
     cout<<"\nbagi : "<<e;
 
 
@@ -115,6 +115,11 @@ int jumlah(int x, int y)
 int pengurangan(int x, int y)
 {
     return x-y;
+}
+
+float kali(float x, float y)
+{
+    return x*y;
 }
 
 float bagi(float x, float y)
