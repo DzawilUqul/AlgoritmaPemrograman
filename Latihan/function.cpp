@@ -7,7 +7,7 @@ using namespace std;
 int jumlah(int a, int b);
 int kurang(int a, int b);
 int kali(int a, int b);
-float bagi(float a, float b);
+float bagi(int a, int b);
 
 int main()
 {
@@ -122,7 +122,8 @@ int kali(int x, int y)
     return x*y;
 }
 
-float bagi(float x, float y)
+float bagi(int x, int y)
 {
-    return x/y;
+    float hasil = (float)x/y;
+    return hasil;
 }
