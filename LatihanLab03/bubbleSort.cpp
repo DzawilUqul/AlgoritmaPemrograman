@@ -44,6 +44,7 @@ void BubbleSort(int arr[],int n)
         }
     }
 
+    cout<<"Bubble sort void";
     for(int i=1; i<n+1; i++)
     {
         cout<<arr[i]<<" ";
