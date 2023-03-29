@@ -1,6 +1,8 @@
 # Prerequisites
 *.d
 *.cbp
+tempCodeRunnerFile.cpp
+latihanLab02.layout
 
 # Compiled Object files
 *.slo
