@@ -32,7 +32,7 @@ int main()
     FungsiTampil(dataArray,jumlahData);
     cout<<endl;
 
-    // Bubble Sort Logic
+    // Bubble Sort Logic}
     dataArray = ProsesBubbleSort(dataArray, jumlahData);
     cout<<endl;
 

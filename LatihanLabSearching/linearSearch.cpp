@@ -5,9 +5,9 @@ void LinearSearch(int arr[], int size, int searchKey);
 
 int main()
 {
-    int arr[10] = {5,3,2,4,5,6,11,10,20,12};
+    int arr[11] = {5,3,2,4,5,6,11,10,20,12,5};
 
-    LinearSearch(arr, 10, 5);
+    LinearSearch(arr, 11, 5);
 
     
     // cout<<"ditemukan hasil sejumlah : "<<hasil;
