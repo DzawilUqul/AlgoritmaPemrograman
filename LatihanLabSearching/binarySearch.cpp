@@ -37,23 +37,36 @@ int main()
     return 0;
 }
 
-void BinarySearch(int arr[],int size, int key)
+void BinarySearch(int* arr, int size, int key)
 {
-    int left = 0, right = size-1, mid = 0;
+    int left = 0, right = size - 1, mid = 0;
+    int index = -1;
 
-    while(left <= right)
+    while (left <= right)
     {
         mid = (left + right) / 2;
 
-        if(arr[mid] == key)
+        if (arr[mid] == key)
         {
-            cout<<"index ke "<<mid;
-        }else if(key < arr[mid])
+            index = mid;
+            break;
+        }
+        else if (key < arr[mid])
         {
-            right = mid -1;
-        } else
+            right = mid - 1;
+        }
+        else
         {
             left = mid + 1;
         }
+    }
+
+    if (index != -1)
+    {
+        cout << "Key found at index " << index << "." << endl;
+    }
+    else
+    {
+        cout << "Key not found." << endl;
     }
 }
