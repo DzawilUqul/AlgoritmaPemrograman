@@ -1,13 +1,22 @@
 #include <iostream>
-
 using namespace std;
 
-int main()
-{
-    int a = 4;
-    int b[1000000000000000000];
-    int* b_2 = new int[1000000000000000000];
+class Employee {
+  private:
+    int salary = 5;
 
-    // cout<<sizeof(a_a);
-    return 0;
+  public:
+    void setSalary(int s) {
+      salary = s;
+    }
+    int getSalary() {
+      return salary;
+    }
+};
+
+int main() {
+  Employee myObj;
+  myObj.setSalary(50000);
+  cout << myObj.getSalary();
+  return 0;
 }
